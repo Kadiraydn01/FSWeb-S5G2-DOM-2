@@ -2,17 +2,21 @@ import "./less/index.less";
 
 // Örnek bir event kullanımı aşağıdadır. Çalıştırmak için comment dışına alın
 document.querySelector("h1").addEventListener("click", function (e) {
-  alert("Bana tıkladın!");
+  alert("Yolculuğa Hazır mısın?");
 });
 
 // Kodlar buraya gelecek!
 const üstkisim = document.querySelectorAll("a");
-üstkisim[0].addEventListener("dblclick", (e) => {
+üstkisim[0].addEventListener("click", (e) => {
   üstkisim[0].classList.toggle("large");
 });
 
-üstkisim[1].addEventListener;
-üstkisim[2].addEventListener;
+üstkisim[1].addEventListener("click", (e) => {
+  üstkisim[1].classList.toggle("large");
+});
+üstkisim[2].addEventListener("click", (e) => {
+  üstkisim[2].classList.toggle("large");
+});
 
 üstkisim[3].addEventListener("click", () => {
   alert("Sizinle İletişime Geçeceğiz");

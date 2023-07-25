@@ -11,7 +11,7 @@
     <title>Hepsi Orada!</title>
     <style>
       .large {
-        transform: scale(1.8);
+        transform: scale(1);
       }
       .canvas {
         border: 1px solid black;
@@ -23,7 +23,18 @@
         display: flex;
         justify-content: center;
       }
+      .div2 {
+        display: flex;
+      }
+      .div2 .buton2 {
+        display: flex;
+      }
     </style>
+    <script>
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
   </head>
 
   <body>
@@ -37,18 +48,53 @@
           Şifre:
           <input type="password" placeholder="şifre " />
         </label>
-        <button>Giriş yap</button>
+        <div class="div2">
+          <button class="buton2" type="button" onclick="displayDate()">
+            Giriş Yapınız
+          </button>
+          <p id="demo">Giriş Tarihi!</p>
+        </div>
       </form>
     </div>
 
     <header class="main-navigation">
       <div class="container nav-container">
-        <h1 class="logo-heading">Eğlence Otobüsü</h1>
+        <h1
+          onmouseover="style.color='red'"
+          onmouseout="style.color='black'"
+          class="logo-heading"
+        >
+          Eğlence Otobüsü
+        </h1>
         <nav class="nav">
-          <a class="nav-link" href="#">Anasayfa</a>
-          <a class="nav-link" href="#">Hakkımızda</a>
-          <a class="nav-link" href="#">Blog</a>
-          <a class="nav-link" href="#">İletişim</a>
+          <a
+            onmouseover="style.color='red'"
+            onmouseout="style.color='black'"
+            class="nav-link"
+            href="#"
+            >Anasayfa</a
+          >
+          <a
+            onmouseover="style.color='red'"
+            onmouseout="style.color='black'"
+            class="nav-link"
+            href="#"
+            >Hakkımızda</a
+          >
+          <a
+            onmouseover="style.color='red'"
+            onmouseout="style.color='black'"
+            class="nav-link"
+            href="#"
+            >Blog</a
+          >
+          <a
+            onmouseover="style.color='red'"
+            onmouseout="style.color='black'"
+            class="nav-link"
+            href="#"
+            >İletişim</a
+          >
         </nav>
       </div>
     </header>
@@ -59,7 +105,9 @@
           src="http://localhost:9000/img/fun-bus.jpg"
           alt="kumlar içindeki otobüs"
         />
-        <h2>Eğlence Otobüsüne Hoş geldiniz!</h2>
+        <h2 onmouseover="style.color='red'" onmouseout="style.color='black'">
+          Eğlence Otobüsüne Hoş geldiniz!
+        </h2>
         <p>
           Gezici sefer modern, temiz web tasarımı blog yazarı temiz web sitesi
           teması web sitesi modern. Güzel tasarım tasarla, travelblogger macera
@@ -70,7 +118,9 @@
       </header>
       <section class="content-section">
         <div class="text-content">
-          <h2>Haydi Gidelim!</h2>
+          <h2 onmouseover="style.color='red'" onmouseout="style.color='black'">
+            Haydi Gidelim!
+          </h2>
           <p>Haydi gidelum hayde hayde gidelum hayde hayde gidelum hayde.</p>
           <p>
             Sefer renkli tasarım basit gezi blog yazarı blog yazarı tasarımı
@@ -93,7 +143,9 @@
           />
         </div>
         <div class="text-content">
-          <h2>Macera beklemez</h2>
+          <h2 onmouseover="style.color='red'" onmouseout="style.color='black'">
+            Macera beklemez
+          </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -109,7 +161,9 @@
         </div>
       </section>
       <section class="content-destination">
-        <h2>Rotanızı Belirleyin</h2>
+        <h2 onmouseover="style.color='red'" onmouseout="style.color='black'">
+          Rotanızı Belirleyin
+        </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -123,13 +177,17 @@
       </section>
       <section>
         <div class="cizim">
-          <h1>Hayallerinizi çizin</h1>
+          <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">
+            Hayallerinizi çizin
+          </h1>
           <canvas id="myPics" width="560" height="360"></canvas>
         </div>
       </section>
       <section class="content-pick">
         <div class="destination">
-          <h4>Güneş altında eğlence</h4>
+          <h4 onmouseover="style.color='red'" onmouseout="style.color='black'">
+            Güneş altında eğlence
+          </h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -139,7 +197,9 @@
           <div class="btn">Beni de Al!</div>
         </div>
         <div class="destination">
-          <h4>Dağ Gezintisi</h4>
+          <h4 onmouseover="style.color='red'" onmouseout="style.color='black'">
+            Dağ Gezintisi
+          </h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -149,7 +209,9 @@
           <div class="btn">Beni de Al!</div>
         </div>
         <div class="destination">
-          <h4>Ada Kaçamağı</h4>
+          <h4 onmouseover="style.color='red'" onmouseout="style.color='black'">
+            Ada Kaçamağı
+          </h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
